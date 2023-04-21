@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite CRUD Application"
+        android:layout_marginStart="50dp"
+        android:id="@+id/textheading"
+        android:layout_marginTop="40dp"
+        android:padding="1dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textheading"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="ENTER NAME HERE">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="ENTER CONTACT DETAILS HERE">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtContact"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="ENTER DOB HERE">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDOB"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Insert" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Update " >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="DELETE " >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="VIEW " >
+
+    </Button>
+
+
+</RelativeLayout>
